@@ -1,0 +1,146 @@
+body {
+    user-select: none;
+}
+
+@keyframes slide-in {
+    0% {
+        margin-left: 308px;
+    }
+
+    100% {
+        margin-left: 18px;
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        margin-left: 18px;
+
+    }
+
+    100% {
+        margin-left: 308px;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        top: 110vh;
+
+    }
+
+    100% {
+        top: 5vh;
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        top: 5vh;
+
+    }
+
+    100% {
+        top: 110vh;
+
+    }
+}
+
+#main-body {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 20px;
+    flex-flow: row wrap;
+
+}
+
+#left-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 280px;
+    overflow: auto;
+    padding-bottom: 10px;
+}
+
+#right-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 260px;
+    padding: 20px;
+    overflow: auto;
+}
+
+#your-cart {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#meals-cart {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    overflow: auto;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 3px;
+    border-color: #D8D2D0;
+    border-style: solid;
+}
+
+#cart-result {
+    text-align: end;
+}
+
+#cart-result p {
+    margin-right: 30px;
+}
+
+.results {
+    font-weight: 900;
+}
+
+#cart-button {
+    display: none;
+}
+
+#right-card button {
+    font-size: 20px;
+    display: none;
+}
+
+#cart-close-button {
+    border: none;
+    color: #7a7979;
+    background-color: #fff;
+    font-weight: 800;
+}
+
+@media (max-width:747px) {
+    #right-card {
+       top: 110vh;
+       position: fixed;
+    }
+
+    #right-card button {
+        display: block;
+    }
+
+    #cart-button {
+        padding: 10px;
+        display: flex;
+        position: fixed;
+        font-weight: 700;
+        color: #fff;
+        font-family: Helvetica, sans-serif;
+        font-size: 20px;
+        top: 90vh;
+        left: 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: green;
+    }
+
+
+}
